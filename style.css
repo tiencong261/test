@@ -1,0 +1,175 @@
+body {
+  background: #222;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background: #d4ff9d;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 10px 0;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #222;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+.icons span {
+  margin-left: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+main {
+  display: flex;
+  background: #0a2a2f;
+  color: #fff;
+  min-height: 500px;
+}
+aside {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  color: #b2ff59;
+}
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social li {
+  margin: 10px 0;
+}
+.hero {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.hero-content {
+  max-width: 400px;
+  position: relative;
+}
+.number-bg {
+  font-size: 7em;
+  color: #1b4d4f;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  z-index: 0;
+  opacity: 0.3;
+}
+.subtitle {
+  color: #b2ff59;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+}
+.hero-content h1 {
+  font-size: 2em;
+  margin: 0 0 20px 0;
+  z-index: 1;
+  position: relative;
+}
+.hero-content button {
+  background: #b2ff59;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.hero-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Mega menu styles */
+.dropdown {
+  position: relative;
+}
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  color: #222;
+  width: 700px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  z-index: 100;
+  flex-direction: row;
+  gap: 40px;
+}
+.menu-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-left li {
+  padding: 8px 0;
+  cursor: pointer;
+}
+.menu-right {
+  display: flex;
+  gap: 20px;
+}
+.menu-right .item {
+  text-align: center;
+}
+.menu-right img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.menu-right span {
+  display: block;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
